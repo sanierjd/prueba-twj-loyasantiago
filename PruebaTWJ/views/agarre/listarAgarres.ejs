@@ -1,0 +1,23 @@
+<div class="row">
+
+  <% for(var i=0; i<Agarre.length; i++){ %>
+  <div class="col-sm-4">
+    <h3 class="text-center"> ID: <%=Agarre[i].id%>   </h3>
+    <h4 class="text-center"> <%=Agarre[i].idUsuario.nombre%></h4>
+    <h4 class="text-center"> <%=Agarre[i].nombre%></h4>
+    <h4 class="text-center"> <%=Agarre[i].veces%></h4>
+    <h4 class="text-center"> <%=Agarre[i].dineroGastado%></h4>
+
+    <a href="/Agarre/BorrarAgarre?id=<%= Agarre[i].id %>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+    <br>
+    <a style="color:white" href="/editarAgarre?id=<%=Agarre[i].id%>">
+      <button class="btn btn-block btn-success"> Editar</button>
+    </a>
+    <br>
+
+  </div>
+  <%  } %>
+
+</div>

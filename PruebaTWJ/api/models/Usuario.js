@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+    nombre:{
+      type:'string',
+      required:true
+    },
+    preferencia:{
+      type:'string',
+      required:true
+    },
+    fechaNacimiento:{
+      type:'date',
+      required:true
+    },
+    agarres:{
+      collection:'agarre',
+      via:'idUsuario'
+    }
   }
 };
 

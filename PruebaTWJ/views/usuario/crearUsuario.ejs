@@ -1,0 +1,26 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crear Usuario</h1>
+
+  <form action="usuario/crearUsuario" method="post">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Preferencia</label>
+      <input type="text" class="form-control" placeholder="Preferencia" name="preferencia">
+    </div>
+
+    <div class="form-group">
+      <label for="">Fecha Nacimiento</label>
+      <input type="date" format="dd/MM/yyyy" class="form-control" placeholder="Fecha de Nacimiento" name="fechaNacimiento">
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-success">Crear Usuario</button>
+
+  </form>
+</div>

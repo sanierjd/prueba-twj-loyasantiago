@@ -1,0 +1,26 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crea Agarre de <%=Usuario.nombre%></h1>
+  <form action="agarre/crearAgarre" method="post">
+    <input type="hidden" name="idUsuario" value="<%=Usuario.id%>">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Veces</label>
+      <input required type="text" class="form-control" placeholder="Veces" name="veces">
+    </div>
+
+    <div class="form-group">
+      <label>Dinero Gastado</label>
+      <input required type="text" class="form-control" placeholder="Dinero Gastado" name="dineroGastado">
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-success">Crear Agarre</button>
+
+  </form>
+</div>
